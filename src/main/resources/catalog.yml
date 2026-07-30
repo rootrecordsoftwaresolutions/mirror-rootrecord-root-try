@@ -3,7 +3,7 @@
 # match: command path prefixes (lowercase), any match completes the try
 # reward-g omitted → use root-try.yml reward-g (1)
 
-version: 4
+version: 5
 
 tries:
   # ——— Economy ———
@@ -47,6 +47,36 @@ tries:
     hint: Run /tax
     host: both
     match: [/tax]
+  - id: gamble.hub
+    title: Open the gamble menu
+    hint: Run /gamble
+    host: both
+    match: [/gamble, /casino, /bets]
+  - id: gamble.roulette
+    title: Try roulette (or open usage)
+    hint: Run /roulette
+    host: both
+    match: [/roulette]
+  - id: gamble.hilo
+    title: Try HiLo (or open usage)
+    hint: Run /hilo
+    host: both
+    match: [/hilo]
+  - id: gamble.lotto
+    title: Buy a lotto ticket (or check pot)
+    hint: Run /lotto
+    host: both
+    match: [/lotto]
+  - id: gamble.coin
+    title: Coin flip a player (or open usage)
+    hint: Run /coin
+    host: both
+    match: [/coin]
+  - id: gamble.dice
+    title: Dice duel a player (or open usage)
+    hint: Run /dice
+    host: both
+    match: [/dice]
   - id: eco.mint
     title: Use the mint
     hint: Run /mint (hand, all, or gold)
