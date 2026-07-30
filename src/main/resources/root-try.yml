@@ -15,7 +15,7 @@ reminder:
   skip-if-empty-world: false
 
 messages:
-  prefix: "&6Try &8» &7"
+  prefix: ""
   completed: "&aTry complete: &f{title}&a — &f+{gold} G&7 (&f{done}&7/&f{total}&7)"
   already: "&7Already completed: &f{title}"
   next: "&eNext try: &f{title}&7 — {hint}"

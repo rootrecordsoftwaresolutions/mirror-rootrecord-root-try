@@ -27,7 +27,7 @@ public final class TryConfig {
         this.rewardG = Math.max(0, cfg.getDouble("reward-g", 1.0));
         this.reminderEnabled = cfg.getBoolean("reminder.enabled", true);
         this.reminderIntervalSeconds = Math.max(30, cfg.getInt("reminder.interval-seconds", 180));
-        this.prefix = str(cfg.getString("messages.prefix"), "&6Try &8» &7");
+        this.prefix = str(cfg.getString("messages.prefix"), "");
         this.msgCompleted = str(cfg.getString("messages.completed"), "&aTry complete: &f{title}&a — &f+{gold} G");
         this.msgAlready = str(cfg.getString("messages.already"), "&7Already completed: &f{title}");
         this.msgNext = str(cfg.getString("messages.next"), "&eNext try: &f{title}&7 — {hint}");
